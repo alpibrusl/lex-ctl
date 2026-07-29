@@ -1,0 +1,10 @@
+[package]
+name        = "lex-ctl"
+version     = "0.1.0"
+description = "Controller kernel for agentic systems — effect contracts, autonomy tiers earned from measured hit rate, and stability primitives (dwell locks, hysteresis, circuit breaker). Mechanism only; hosts supply policy."
+
+[dependencies]
+# None yet. The kernel is pure Lex + stdlib. Planned integrations
+# (recording contracts/dispositions as lex-trail events, consuming
+# lex-agent capability gates) land with the first real consumer —
+# see lex-loom#126 and lex-soft#106.
