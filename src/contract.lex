@@ -21,7 +21,7 @@ import "std.crypto" as crypto
 
 type Comparator = Below | Above
 
-type OnFalsify = Rollback | Hold | Escalate
+type OnFalsify = Rollback | Hold | Handoff
 
 type Predicate = { signal :: Str, cmp :: Comparator, threshold_milli :: Int }
 
@@ -42,13 +42,13 @@ fn cmp_str(c :: Comparator) -> Str
 fn on_falsify_str(o :: OnFalsify) -> Str
   examples {
     on_falsify_str(Rollback) => "rollback",
-    on_falsify_str(Escalate) => "escalate"
+    on_falsify_str(Handoff) => "handoff"
   }
 {
   match o {
     Rollback => "rollback",
     Hold => "hold",
-    Escalate => "escalate",
+    Handoff => "handoff",
   }
 }
 
