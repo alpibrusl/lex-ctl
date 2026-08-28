@@ -63,3 +63,9 @@ lex check --strict src/
 lex fmt --check src/ tests/
 lex test tests/
 ```
+
+## License
+
+Copyright (c) 2026 lex-ctl contributors.
+
+Licensed under the [EUPL-1.2](LICENSE) — the European Union Public Licence, as used across the `lex-*` ecosystem.
